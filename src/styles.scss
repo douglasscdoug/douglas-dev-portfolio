@@ -5,8 +5,8 @@ html,
 body {
   height: 100%;
   scroll-behavior: smooth;
-}
-
-body {
-  background-color: #121212;
+  background:
+    radial-gradient(circle at top left, #4b4b4b 0%, transparent 40%),
+    linear-gradient(to right, #1f1f1f, #121212);
+  min-height: 100vh;
 }

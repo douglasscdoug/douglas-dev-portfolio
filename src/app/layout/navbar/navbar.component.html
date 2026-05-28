@@ -1,1 +1,61 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+  <div class="container-lg">
+    <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+      <img src="assets/logo/dc-logo.svg" alt="Douglas Cabral logo" class="brand-logo" />
+
+      <span class="fw-bold"> Douglas Cabral </span>
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-label="Toggle navigation"
+      (click)="toggleCollapse()"
+      [attr.aria-expanded]="!isCollapsed"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" [collapse]="isCollapsed" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="#about">Sobre</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="#skills">Skills</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="#projects">Projetos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" href="#contact">Contato</a>
+        </li>
+      </ul>
+      <div class="d-flex align-items-center social-icons">
+        <a
+          href="https://github.com/douglasscdoug"
+          target="_blank"
+          class="social-icon"
+          aria-label="GitHub"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-github"></i>
+        </a>
+
+        <a
+          href="https://linkedin.com/in/douglas-cabral-531a49165"
+          target="_blank"
+          class="social-icon"
+          aria-label="LinkedIn"
+          rel="noopener noreferrer"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,75 @@
+.navbar {
+    padding: 0.8rem 0;
+}
+.custom-navbar {
+  background: rgba(34, 34, 34, 0.75);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.3s ease;
+}
+.nav-link-custom {
+  position: relative;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link-custom:hover::after {
+  width: 100%;
+}
+.navbar-brand {
+  font-size: 1.4rem;
+  letter-spacing: -0.5px;
+}
+.logo-initials {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.9rem;
+  font-weight: 700;
+  backdrop-filter: blur(10px);
+}
+.brand-logo {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.social-icons {
+  margin-left: 1.5rem;
+  gap: 1rem;
+}
+
+.social-icon {
+  color: rgba(255,255,255,0.8);
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+  opacity: 0.85;
+}
+
+.social-icon:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+@media (max-width: 991px) {
+  .social-icons {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
