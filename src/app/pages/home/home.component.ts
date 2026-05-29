@@ -1,8 +1,13 @@
 import { Component } from '@angular/core';
+import { HeroComponent } from "../../shared/components/hero/hero.component";
+import { AboutComponent } from "../about/about.component";
+import { SkillsComponent } from "../../shared/components/skills/skills.component";
+import { ProjectsComponent } from "../projects/projects.component";
+import { ContactComponent } from "../contact/contact.component";
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [HeroComponent, AboutComponent, SkillsComponent, ProjectsComponent, ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
