@@ -1,0 +1,23 @@
+.hero-section {
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(13, 110, 253, 0.15),
+      transparent 40%
+    );
+}
+
+.hero-image {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-links a {
+  font-size: 1.8rem;
+}
