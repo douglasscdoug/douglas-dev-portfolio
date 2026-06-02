@@ -1,1 +1,13 @@
-<p>skills works!</p>
+<h2>Tecnologias</h2>
+<p>Tecnologias e ferramentas utilizadas no desenvolvimento de aplicações web modernas.</p>
+<div class="skills-grid mt-5">
+  @for (skill of skills; track skill.name) {
+    <div class="skill-card" data-aos="fade-up">
+      
+
+      <h5><i [class]="skill.icon + ' me-2'"></i>{{ skill.name }}</h5>
+
+      <small>{{ skill.category }}</small>
+    </div>
+  }
+</div>
