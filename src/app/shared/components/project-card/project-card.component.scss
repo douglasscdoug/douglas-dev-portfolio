@@ -1,0 +1,13 @@
+.project-card {
+  transition: all .3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+}
+
+.card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
