@@ -1,0 +1,15 @@
+.contact-card {
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+
+  transition: .3s;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+
+  i {
+    font-size: 2rem;
+  }
+}
