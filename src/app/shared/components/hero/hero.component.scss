@@ -1,10 +1,8 @@
-.hero-section {
-  background:
-    radial-gradient(
-      circle at top right,
-      rgba(13, 110, 253, 0.15),
-      transparent 40%
-    );
+.hero-content {
+  // min-height: calc(100vh - 120px);
+  padding-top: 4rem;
+  display: flex;
+  align-items: center;
 }
 
 .hero-image {
@@ -14,6 +12,7 @@
 }
 
 .social-links {
+  margin-top: 2rem;
   display: flex;
   gap: 1rem;
 }
