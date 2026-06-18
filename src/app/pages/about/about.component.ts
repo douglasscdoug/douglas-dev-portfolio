@@ -9,6 +9,12 @@ import AOS from 'aos'
 })
 export class AboutComponent implements OnInit {
   ngOnInit(): void{
-    AOS.init();
   }
+
+  ngAfterViewInit(): void {
+  AOS.init({
+    once: true,
+    duration: 700
+  });
+}
 }

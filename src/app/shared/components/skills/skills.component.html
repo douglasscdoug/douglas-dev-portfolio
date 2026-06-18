@@ -5,8 +5,7 @@
 <div class="skills-grid mt-5">
   @for (skill of skills; track skill.name) {
     <div class="skill-card" data-aos="fade-up">
-      <h5><i [class]="skill.icon + ' me-2'"></i>{{ skill.name }}</h5>
-
+      <h5><img [src]="skill.icon" width="20" height="20" loading="lazy" decoding="async" [alt]="skill.name"/>&nbsp;{{ skill.name }}</h5>
       <small>{{ skill.category }}</small>
     </div>
   }

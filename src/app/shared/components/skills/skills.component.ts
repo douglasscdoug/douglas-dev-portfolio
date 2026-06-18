@@ -12,70 +12,76 @@ export class SkillsComponent implements OnInit {
   public skills: Skill[] = [
     {
       name: 'Angular',
-      icon: 'devicon-angularjs-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angularjs/angularjs-original.svg',
       category: 'Front-end'
     },
     {
       name: 'TypeScript',
-      icon: 'devicon-typescript-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
       category: 'Front-end'
     }, {
       name: 'HTML5',
-      icon: 'devicon-html5-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg',
       category: 'Front-end'
     }, {
       name: 'CSS3',
-      icon: 'devicon-css3-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg',
       category: 'Front-end'
     }, {
       name: 'Bootstrap',
-      icon: 'devicon-bootstrap-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original-wordmark.svg',
       category: 'Front-end'
     }, {
       name: 'C#',
-      icon: 'devicon-csharp-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
       category: 'Back-end'
     }, {
       name: '.NET',
-      icon: 'devicon-dot-net-plain-wordmark colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dot-net/dot-net-original-wordmark.svg',
       category: 'Back-end'
     }, {
       name: 'ASP.NET Core',
-      icon: 'devicon-dotnetcore-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg',
       category: 'Back-end'
     }, {
-      name: 'Entity Framework Core',
-      icon: 'devicon-entityframeworkcore-plain colored',
+      name: 'EF Core',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/entityframeworkcore/entityframeworkcore-original.svg',
       category: 'Back-end'
     }, {
       name: 'REST APIs',
-      icon: 'devicon-swagger-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/swagger/swagger-original.svg',
       category: 'Back-end'
     }, {
       name: 'JWT Authentication',
-      icon: 'devicon-oauth-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oauth/oauth-original.svg',
       category: 'Back-end'
     }, {
       name: 'SQL Server',
-      icon: 'devicon-microsoftsqlserver-plain-wordmark colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg',
       category: 'Banco de dados'
     }, {
       name: 'Git',
-      icon: 'devicon-git-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
       category: 'Ferramentas'
     }, {
       name: 'GitHub',
-      icon: 'devicon-github-original',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg',
       category: 'Ferramentas'
     },
     {
       name: 'VS Code',
-      icon: 'devicon-vscode-plain colored',
+      icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg',
       category: 'Ferramentas'
     }
   ];
 
   ngOnInit(): void {
-    AOS.init();
   }
+
+  ngAfterViewInit(): void {
+  AOS.init({
+    once: true,
+    duration: 700
+  });
+}
 }

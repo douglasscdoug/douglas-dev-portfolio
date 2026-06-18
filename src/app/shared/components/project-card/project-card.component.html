@@ -1,5 +1,12 @@
 <div class="card project-card h-100">
-  <img [src]="project.imageUrl" [alt]="project.title" class="card-img-top" />
+  <img 
+    [src]="project.imageUrl"
+    [alt]="project.title"
+    class="card-img-top"
+    loading="lazy"
+    width="600"
+    height="300"
+    decoding="async"/>
   <div class="card-body">
     @if (project.featured) {
       <span class="badge bg-primary mb-2"> Projeto Principal </span>
