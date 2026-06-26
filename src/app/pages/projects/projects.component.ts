@@ -14,7 +14,13 @@ export class ProjectsComponent implements OnInit{
     {
       title: 'Sistema administrativo empresarial',
       description: 'Sistema administrativo web com login, cadastro de empresas e usuários.',
-      imageUrl: 'assets/images/projects/empresas.webp',
+      images: [
+        'assets/images/projects/sistema-empresas/empresas.webp',
+        'assets/images/projects/sistema-empresas/empresas-detalhe.webp',
+        'assets/images/projects/sistema-empresas/usuarios.webp',
+        'assets/images/projects/sistema-empresas/usuarios-detalhe.webp',
+        'assets/images/projects/sistema-empresas/login.webp',
+      ],
       technologies: ['angular', '.NET', 'SQLite', 'JWT', 'Ef Core'],
       githubUrl: 'https://github.com/douglasscdoug/Sistema-Administrativo-de-Empresas',
       featured: true
@@ -22,14 +28,22 @@ export class ProjectsComponent implements OnInit{
     {
       title: 'ProEventos',
       description: 'Sistema web com login, cadastro de eventos com gerenciamento de participantes, local, lote e redes sociais.',
-      imageUrl: 'assets/images/projects/eventos.webp',
+      images: [
+        'assets/images/projects/proEventos/eventos.webp',
+        'assets/images/projects/proEventos/cadastro-evento.webp',
+        'assets/images/projects/proEventos/detalhes-evento.webp',
+        'assets/images/projects/proEventos/palestrantes.webp',
+        'assets/images/projects/proEventos/perfil.webp',
+        'assets/images/projects/proEventos/registration.webp',
+        'assets/images/projects/proEventos/login.webp',
+      ],
       technologies: ['angular', '.NET API', 'SQLite', 'JWT', 'Ef Core'],
       githubUrl: 'https://github.com/douglasscdoug/ProEventos'
     },
     {
       title: 'Portfolio Pessoal',
       description: 'Portfólio desenvolvido em Angular com Bootstrap, animações AOS e layout responsivo.',
-      imageUrl: 'assets/images/projects/portfolio.webp',
+      images: ['assets/images/projects/portfolio.webp'],
       technologies: ['angular', 'TypeScript', 'SCSS', 'Bootstrap', 'AOS'],
       githubUrl: 'https://github.com/douglasscdoug/douglas-dev-portfolio'
     }
