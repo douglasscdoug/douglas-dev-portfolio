@@ -57,9 +57,11 @@
         </div>
       </div>
 
-      <button type="submit" [disabled]="contactForm.invalid || isSending" class="btn btn-success">
-        {{ isSending ? 'Enviando...' : 'Enviar mensagem' }}
-      </button>
+      <div class="text-center mt-4">
+        <button type="submit" [disabled]="contactForm.invalid || isSending" class="btn btn-success px-4">
+          {{ isSending ? 'Enviando...' : 'Enviar mensagem' }}
+        </button>
+      </div>
     </form>
   </div>
 </div>
