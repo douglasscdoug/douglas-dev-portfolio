@@ -25,14 +25,41 @@
 
     <a href="https://github.com/douglasscdoug" target="_blank"> Ver repositórios </a>
   </div>
-  <div class="contact-cta text-center">
+  <div class="card rounded shadow-sm p-3">
+    <h5>Vamos construir algo juntos?</h5>
 
-  <h4>Vamos conversar?</h4>
+    <p>
+      Aberto a oportunidades, freelas e novos desafios.
+    </p>
+    <form [formGroup]="contactForm" (ngSubmit)="sendEmail()">
+      <div class="justify-content-start p-3">
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label>Nome</label>
+            <input type="text" placeholder="Seu nome" formControlName="name" class="form-control" />
+          </div>
+          <div class="form-group col-md-6">
+            <label>Email</label>
+            <input type="email" placeholder="Seu email" formControlName="email" class="form-control" />
+          </div>
+        </div>
+        <div class="row">  
+          <div class="form-group col-md-12">
+            <label>Assunto</label>
+            <input type="text" placeholder="Assunto" formControlName="subject" class="form-control" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col-md-12">
+            <label>Mensagem</label>
+            <textarea rows="5" placeholder="Sua mensagem" formControlName="message" class="form-control"></textarea>
+          </div>
+        </div>
+      </div>
 
-  <p>
-    Estou em busca de oportunidades para atuar como
-    Desenvolvedor Full Stack .NET e Angular.
-  </p>
-
-</div>
+      <button type="submit" [disabled]="contactForm.invalid || isSending" class="btn btn-success">
+        {{ isSending ? 'Enviando...' : 'Enviar mensagem' }}
+      </button>
+    </form>
+  </div>
 </div>
