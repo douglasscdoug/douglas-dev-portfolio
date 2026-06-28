@@ -1,3 +1,9 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
 .contact-card {
   padding: 2rem;
   border-radius: 1rem;
@@ -11,5 +17,19 @@
 
   i {
     font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+.contact-form-card {
+  max-width: 900px;
+  margin: 3rem auto 0;
+  border-radius: 16px;
+}
+@media (min-width: 768px) {
+  .contact-container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 900px;
+    margin: 3rem auto 0;
+    align-items: start;
   }
 }
