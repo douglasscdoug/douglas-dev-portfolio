@@ -23,6 +23,7 @@ export class ProjectsComponent implements OnInit{
       ],
       technologies: ['angular', '.NET', 'SQLite', 'JWT', 'Ef Core'],
       githubUrl: 'https://github.com/douglasscdoug/Sistema-Administrativo-de-Empresas',
+      demoUrl: 'https://sistema-administrativo-de-empresas.vercel.app/login',
       featured: true
     },
     {
@@ -37,8 +38,9 @@ export class ProjectsComponent implements OnInit{
         'assets/images/projects/proEventos/registration.webp',
         'assets/images/projects/proEventos/login.webp',
       ],
-      technologies: ['angular', '.NET API', 'SQLite', 'JWT', 'Ef Core'],
-      githubUrl: 'https://github.com/douglasscdoug/ProEventos'
+      technologies: ['angular', '.NET API', 'PostgreSQL', 'JWT', 'Ef Core'],
+      githubUrl: 'https://github.com/douglasscdoug/ProEventos',
+      demoUrl: 'https://pro-eventos-swart.vercel.app/'
     },
     {
       title: 'Portfolio Pessoal',
